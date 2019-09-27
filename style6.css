@@ -1,0 +1,177 @@
+html,
+body {
+  margin: 0 auto;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 1fr auto;
+  min-height: 100%;
+}
+header {
+  background-image: url("res.png");
+  grid-column-start: 1;
+  grid-column-end: 4;
+  position: relative;
+  background-attachment: fixed;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+}
+nav {
+  position: fixed;
+  z-index: 1;
+}
+
+nav,
+main,
+footer {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+ul {
+  text-align: center;
+  background: brown;
+  padding: 20px;
+  margin: 0 auto;
+}
+ul li {
+  text-transform: uppercase;
+  display: inline;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+ul li:hover {
+  background: black;
+}
+ul li:active {
+  background: black;
+}
+h2 {
+  text-align: center;
+}
+img {
+  height: 100%;
+  margin: 0px;
+  position: absolute;
+}
+.header {
+  opacity: 0.7;
+  font-size: 18px;
+  padding: 20px;
+  text-align: justify;
+  width: 400px;
+  background: white;
+  height: 200px;
+  margin: 100px 20px 0 20px;
+}
+
+.leftbar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 20px;
+}
+.container {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin: 10px;
+  padding: 20px;
+  border-left: 2px solid slategrey;
+}
+b {
+  font-size: 22px;
+}
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  border: 1px solid slategray;
+  padding: 10px;
+}
+h4 {
+  width: 75%;
+  background: brown;
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 {
+  display: inline-block;
+  background: brown;
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container,
+.leftbar,
+p {
+  font-size: 18px;
+}
+p.leftbar {
+  background: wheat;
+}
+button {
+  padding: 15px;
+  background: red;
+  border: none;
+  margin-top: -30px;
+  margin-left: 300px;
+  font-weight: bold;
+  color: white;
+}
+button:hover {
+  padding: 35px;
+  background: black;
+}
+.logo {
+  align-items: center;
+  margin-top: 10px;
+}
+footer {
+  color: white;
+  text-align: center;
+  background: cadetblue;
+  display: flex;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+}
+.address {
+  width: 33.33%;
+}
+.logo {
+  width: 33.33%;
+}
+.email {
+  width: 33.33%;
+}
+footer p {
+  padding: 0 30px 0 30px;
+}
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
